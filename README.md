@@ -1,2 +1,3 @@
-# dotfiles
-dotfiles by reizzao
+# Reizzao Dotfiles
+
+WIP
