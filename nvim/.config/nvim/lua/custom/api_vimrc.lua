@@ -6,7 +6,7 @@
      local g = vim.g
      local cmd = vim.cmd
 
-     print("vindo do file: custom/api_vimrc")
+     -- print("vindo do file: custom/api_vimrc")
 
      cmd([[ syntax on ]])
      -- ajudar na syntaxe das linguagens
