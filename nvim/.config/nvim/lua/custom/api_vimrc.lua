@@ -1,4 +1,6 @@
      -- API VIMRC --
+-- print("vindo do file:: debug.getinfo(1).source")
+
 
      -- Vars locais mapeando api vim para usar neste arquivo
      local api = vim.api
@@ -6,8 +8,7 @@
      local g = vim.g
      local cmd = vim.cmd
 
-     -- print("vindo do file: custom/api_vimrc")
-
+     
      cmd([[ syntax on ]])
      -- ajudar na syntaxe das linguagens
 
