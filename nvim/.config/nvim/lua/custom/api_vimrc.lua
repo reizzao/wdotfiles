@@ -1,7 +1,6 @@
      -- API VIMRC --
 -- print("vindo do file:: debug.getinfo(1).source")
 
-
      -- Vars locais mapeando api vim para usar neste arquivo
      local api = vim.api
      local opt = vim.opt
