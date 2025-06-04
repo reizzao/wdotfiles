@@ -1,8 +1,5 @@
 # IMPORTS MODULES
-# alias loginit="echo OK olá {{ $NOMEFILE }} em mybash 2" # LOGAR FILE # TODO
-loginit() {
-  echo "OK olá {{ $NOMEFILE }} em mybash 2"
-}
+
 
 if [ -f modules_bash.PATH  ]; then
     . modules_bash.PATH

@@ -1,5 +1,7 @@
 # Modules by Github
-alias loggit="echo OK olá {{ $NOMEFILE }} em mybash" # LOGAR FILE # TODO
+log_git() {
+  echo "OK olá << >> em shell_app/modules_bash.git" # LOGAR FILE
+}
 
 gs() {
   git status

@@ -1,5 +1,7 @@
 # System
-alias logsystem="echo OK olá {{ $NOMEFILE }} em mybash" # LOGAR FILE # TODO
+log_system() {
+  echo "OK olá <<  >> em shell_app/modules_bash.system" # LOGAR FILE
+}
 
 off() {
   sudo poweroff

@@ -1,5 +1,8 @@
 # -------------------------------------------------
 # MINHAS CUSTOMIZAÇÕES
+log_bash_aliases() {
+  echo "OK olá << $NOMEFILE >> em .bashaliases" # LOGAR FILE
+}
 
 # USE IN SYSTEM
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
@@ -34,6 +37,8 @@ export DOTFILES="dotfiles" # editor 1
 # export URL_NVIM="$HOME/nvim/.config/nvim" # editor 1
 # export URL_ALAC="$HOME/$DOTFILES/alacritty/.config/alacritty"
 # export URL_MYBASH="$HOME/$DOTFILES/bash_aliases"
+
+
 
 
 
