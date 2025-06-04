@@ -1,1 +1,1 @@
-require("custom.api_vimrc")
+require("custom.api_vimrc").setup_options()
