@@ -12,7 +12,6 @@ vim.g.have_nerd_font = true
 -- Exibir números de linha por padrão
 vim.opt.number = true
 -- Você também pode adicionar números de linha relativos, para ajudar com saltos.
--- Experimente para ver se você gosta!
 vim.opt.relativenumber = true
 
 -- Habilita o modo mouse, pode ser útil para redimensionar divisões, por exemplo!
