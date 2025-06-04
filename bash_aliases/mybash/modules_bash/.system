@@ -1,0 +1,22 @@
+# System
+alias logsystem="echo OK olá {{ $NOMEFILE }} em mybash" # LOGAR FILE # TODO
+
+off() {
+  sudo poweroff
+  # desligar pc imediatamente
+  # para desligar em 5 segundos: sudo shutdown -h +5
+}
+
+up() {
+  sudo apt update
+}
+
+upp() {
+  sudo apt update
+  sudo apt upgrade -y
+  sudo apt autoremove -y
+  sudo apt autoclean
+  sudo apt clean
+}
+
+
