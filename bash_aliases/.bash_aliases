@@ -17,15 +17,15 @@ stty -ixon
 
 
 # CHAMA MY PERSONAL SHELL
-if [ -f mybash/.init ]; then
-    . mybash/.init
+if [ -f shell_app/.init ]; then
+    . shell_app/.init
 fi
 # -------------------------------------------------
 
 # USE GLOBAL
 export NOMEFILE="Test OK" # TODO
 # export NOMEFILE=$(basename "$0") # TODO
-alias logmybash="echo OK olá {{ $NOMEFILE }} em mybash" # LOGAR FILE
+alias log_shell_app="echo OK olá {{ $NOMEFILE }} em shell_app" # LOGAR FILE
 
 export FOLDER_DEV=dev_rzj # polounico pasta do dev
 export EDITOR1="nvim" # editor 1
