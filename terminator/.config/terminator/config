@@ -1,42 +1,25 @@
 [global_config]
-    window_state = maximise # opcao de como vai abrir a janela do terminal ao ser chamado
-    focus_new_terminals = True
-    borderless = False
-    sticky = False
-    mouse_autohide = False
-
+  window_state = maximise
+  borderless = True
 [keybindings]
-    # Aqui você pode definir atalhos de teclado personalizados
-    # Ex: custom_key_binding = <Control><Shift>p
-
 [profiles]
-    [[default]]
-        # CORES E FUNDO
-        foreground_color = "#FFFFFF" # Cor do texto (branco)
-        background_color = "#2596be"    # cor de fundo
-        palette = "#2596be:#2E3436:#CC0000:#4E9A06:#C4A000:#3465A4:#75507B:#06989A:#D3D7CF:#555753:#EF2929:#8AE234:#FCE94F:#729FCF:#AD7FA8:#34E2E2:#EEEEEE" # Paleta de cores (se quiser customizar)
-        background_darkness = 0.85 # 0.0 é totalmente transparente, 1.0 é opaco
-        background_type = transparent # Ou 'none' para opaco
-
-        # FONTE
-        font = Monospace 12 # Nome da fonte e tamanho
-        use_system_font = False # Importante: Defina como False para usar a 'font' acima
-        allow_bold = True
-        bold_is_bright = False
-
-        # SCROLLBAR
-        scrollbar_position = right # ou 'left', 'off'
-        show_scrollbar = True
-
-        # OUTROS
-        cursor_color = "#AAAAAA" # Cor do cursor
-        cursor_shape = ibeam # conf do cursor  opções:'ibeam', 'underline' ou bloack
-        copy_on_select = True # Copia automaticamente ao selecionar texto
-        scroll_on_output = False # Não rola automaticamente para o final na saída
-        scroll_on_keystroke = True # Rola para o final ao digitar
-
-    # Você pode adicionar mais perfis aqui, por exemplo:
-    # [[dev_profile]]
-    #     background_color = "#1A2B3C"
-    #     font = 'DejaVu Sans Mono 10'
-    #     # ... outras configurações específicas para este perfil
+  [[default]]
+    background_color = "#2596be"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_fg_color = "#2596be"
+    cursor_bg_color = "#ffffff"
+    font = Monospace 12
+    foreground_color = "#FFFFFF"
+    palette = "#2596be:#2e3436:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2"
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
