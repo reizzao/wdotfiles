@@ -1,0 +1,20 @@
+# PERSONALIZAÇÃO
+
+para editar as configs pode fazer na interface de uso que repfletira no arquivo de config. adicionando o comando modificado e podemos versionar no github.
+
+  - atalho fechar terminal: `em [keybindings] ::adicionar ::  close_window = <Alt>q`
+
+ -  abrir com janela maximizada: `em : [global_config] adicionar: window_state = maximise`,
+
+mudar terminal padrao no bodhi linux:
+configuracoes / aplicações padrao / terminal / <escolher o terminal que quer como padrao.>
+
+---
+
+# LINKS
+-- editar meus do terminal Terminator : local ~/.config/terminator/config.
+
+-- atalhos default do Terminator : https://shortcutbuzz.com/terminator-keyboard-shortcuts-a-complete-list/
+-- conceito remapear : antes de mapear teclas funcionais F1 etc... Reset ou apague as configuradas no configurador do terminal.
+
+props_terminator : https://www.systutorials.com/docs/linux/man/5-terminator_config/

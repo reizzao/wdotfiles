@@ -1,0 +1,20 @@
+[global_config]
+  window_state = maximise
+[keybindings]
+  close_window = <Alt>q
+[profiles]
+  [[default]]
+    background_color = "#2596be
+    cursor_shape = ibeam
+    font = JetBrainsMono Nerd Font Mono 10
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
