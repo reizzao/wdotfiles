@@ -26,8 +26,8 @@ gtp() {
   git push
 }
 
-# AUTOMACAO GITHUB ACOES : MUDANCAS REMOTO COM LOCAL
-gtau() {
+# AUTOMACAO GITHUB ACOES : RESGATAR MUDANCAS REMOTO COM LOCAL
+grr() {
     echo "Iniciando automação Git..."
 
     local skip_pull=false
