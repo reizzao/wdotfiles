@@ -1,6 +1,6 @@
 # Modules by Github
 
-test_bash_git() {
+gtt() {
   echo "OK olá << MODULE - UTILS - GITHUB >> " # LOGAR FILE
 }
 
@@ -8,44 +8,26 @@ gts() {
   git status
 }
 
-# gl() {
-#   git log
-#   # mostra mais detalhes no log das acoes feitas
-# }
-
-gl() {
+gtl() {
 	git reflog
 	# mostra menos detalhes no log de acoes feitas
 }
 
-grr2() {
-  # recuperar att no remoto para o local antes de mexer no local
-
-  # git fetch && git reset --hard && git push && git merge --force # todo: melhorar
-
-  git pull && git push && git merge # antigo ok : recuperar att no remoto para o local antes de mexer no local
-
-}
-
-grr() {
-  git pull && git push && git merge
-}
-
-ga() {
+gta() {
   git add .
 }
 
-gc() {
+gtc() {
   git commit -m "$1"
   # todo: no  git reflog não esta mostrando toda mensagem
 }
 
-gp() {
+gtp() {
   git push
 }
 
 # AUTOMACAO GITHUB ACOES : MUDANCAS REMOTO COM LOCAL
-grl() {
+gtau() {
     echo "Iniciando automação Git..."
 
     local skip_pull=false
