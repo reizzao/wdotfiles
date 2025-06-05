@@ -1,0 +1,34 @@
+
+# ARRUMAR #
+
+# RECONHECER PROGRAMAS
+
+# KOTLIN - adicionar bin do novo pacote ao PATH caminho do sistema.
+# export PATH=$PATH:/home/reizao/_my_rzj_/_programas_/kotlin/kotlinc/bin/
+# export PATH=$PATH:/home/reizao/_my_rzj_/_programas_/intellij_Community/idea-IC-232.9559.62/bin/
+
+
+# alias ocpp="cd ~/..backend/cpp/"
+# alias otester="cd $etester"
+# alias ogitall="cd $egitall"
+
+# ObservacaoGeral: para refletir as alteracoes propag no terminal que tiver usando seja ele do bash ou do vscode.
+
+#  MESTRAS :: CADA UM CRIAR A MESTRA - 'c' ABRIR - 'e' EDITAR
+# export epgm="$HOME/..pgm/"
+# export ets="$HOME/_git_rzj/_base_linguagens_/TS/"
+# export elibs="$HOME/..gitAll/RZ_Libs/"
+# export ebash="$HOME/Personal_Bash/"
+# export evscode="$HOME/.config/Code/User/"
+# export egitall="$HOME/..gitAll/"
+# export egit="$HOME/..gitbase/"
+# export egitestes="$HOME/..gitAll/gitestes"
+# export eimplementashow="$HOME/..gitAll/implementashow/"
+# export ebackups="$HOME/..backups/"
+# export etester="$HOME/..tester/"
+# export EDITOR_VIM="vim"
+# export EDITOR_NVIM="nvim"
+# export EDITOR_CODE="code"
+# export ejava="$HOME/_git_rzj/_base_linguagens_/java/"
+
+

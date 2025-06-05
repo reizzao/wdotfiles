@@ -1,8 +1,16 @@
+
+# VARS
+export MYDIR_DOTFILES="dotfiles"
+
+# ALIAS
+alias rr="source ~/.bashrc" # reconectar mudanças no bash
+
+
 # IMPORTS
-if [ -f ~/dev/my_bash/.init ]; then
-     . ~/dev/my_bash/.init
+if [ -f ~/$MYDIR_DOTFILES/my_bash/.init ]; then
+     . ~/$MYDIR_DOTFILES/my_bash/.init
 fi
 
-if [ -f ~/dev/my_bash/.github ]; then
-     . ~/dev/my_bash/.github
+if [ -f ~/$MYDIR_DOTFILES/my_bash/.github ]; then
+     . ~/$MYDIR_DOTFILES/my_bash/.github
 fi
