@@ -1,13 +1,16 @@
 #!/bin/bash
 
-source "$ZSH/custom/github.mod.sh"
+source "$MYSHC/github.mod.sh"
 
-ttsh() {
-  echo "Esta é a minha primeira função em shell script!"
-}
+# VARS -- os textos sao editaveis
+export MYDIR_DOTFILES="$HOME/dotfiles"
+export MYSHC="/$HOME/dotfiles/my_shell/in_shellscript"
 
-# VARS
-alias rr="source ~/.zshrc"
+# VARS - SYSTEM
+export RC="bashrc" # controla o shell em uso no terminal.
+
+# ALIAS
+alias rr="source ~/.$RC"
 alias hh="cd ~/"
 alias wd="cd ~/dotfiles"
 alias dev="cd ~/dev"
@@ -21,8 +24,8 @@ stty -ixon
 
 resultado_test_fn_importada_tttg=$(tttg "este é o meu arg repassado a fn tttg")
 
-tttsh() {
-  echo "<<Oi sou o oh-my-zsh.sh>>"
+ttsh() {
+  echo "<< 1 :: Oi sou o oh-my-zsh.sh>>"
   echo ">> executando o importado git $resultado_test_fn_importada_tttg >>"
 }
 

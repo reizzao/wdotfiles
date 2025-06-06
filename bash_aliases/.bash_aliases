@@ -1,16 +1,5 @@
+# -- TRAZER O MY SHELL SCRIPT EM USO
 
-# VARS
-export MYDIR_DOTFILES="dotfiles"
+source "$HOME/dotfiles/my_shell/in_shellscript/init.sh"
 
-# ALIAS
-alias rr="source ~/.bashrc" # reconectar mudanças no bash
-
-
-# IMPORTS
-if [ -f ~/$MYDIR_DOTFILES/my_bash/.init ]; then
-     . ~/$MYDIR_DOTFILES/my_bash/.init
-fi
-
-if [ -f ~/$MYDIR_DOTFILES/my_bash/.github ]; then
-     . ~/$MYDIR_DOTFILES/my_bash/.github
-fi
+     
