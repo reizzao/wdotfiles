@@ -1,0 +1,115 @@
+# -------------------------------------------------
+# MINHAS CUSTOMIZAÇÕES
+log_bash_aliases() {
+  echo "OK olá <<   >> em .bashaliases"
+}
+
+# VARS
+# obs: este PS1 são config terminal bash mais simples - os modernos nao precisam desta VAR
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
+export rr="source ~/.bashrc" # resgatar mudanças no bash
+
+# obs: os terminais modernos nao precisam desta FUNCIONALIDADE
+parse_git_branch() {
+# show branch github in use in terminal bash - obs: tem que ficar aqui # important
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
+stty -ixon
+
+# Vars - Define as Variaveisdo modulo # obs: fica aqui em primeira_visao.
+## important: vars export declara Normal mas usa com $
+
+
+
+# USE GLOBAL
+# export NOMEFILE="Test OK" # TODO
+# export NOMEFILE=$(basename "$0") # TODO
+# alias log_shell_app="echo OK olá {{ $NOMEFILE }} em shell_app" # LOGAR FILE
+
+# export FOLDER_DEV=dev_rzj # polounico pasta do dev
+# export EDITOR1="nvim" # editor 1
+# export DOTFILES="dotfiles" # editor 1
+
+# export URL_NVIM="$HOME/nvim/.config/nvim" # editor 1
+# export URL_ALAC="$HOME/$DOTFILES/alacritty/.config/alacritty"
+# export URL_MYBASH="$HOME/$DOTFILES/bash_aliases"
+
+# todo temporario
+# grl() {
+#     echo "Iniciando automação Git..."
+
+#     local skip_pull=false
+#     local skip_merge=false
+#     local commit_message=""
+
+#     # Processar argumentos
+#     while [[ "$#" -gt 0 ]]; do
+#         case "$1" in
+#             --no-pull)
+#                 skip_pull=true
+#                 ;;
+#             --no-merge)
+#                 skip_merge=true
+#                 ;;
+#             -m)
+#                 if [ -n "$2" ]; then
+#                     commit_message="$2"
+#                     shift # Consome o argumento da mensagem
+#                 else
+#                     echo "Erro: -m requer uma mensagem de commit."
+#                     return 1
+#                 fi
+#                 ;;
+#             *)
+#                 # Captura a mensagem de commit se não for uma flag
+#                 if [ -z "$commit_message" ]; then
+#                     commit_message="$1"
+#                 else
+#                     echo "Aviso: Argumento desconhecido '$1' será ignorado."
+#                 fi
+#                 ;;
+#         esac
+#         shift # Consome o argumento atual
+#     done
+
+#     # 1. git pull (opcional)
+#     if [ "$skip_pull" = false ]; then
+#         echo "Executando: git pull"
+#         git pull || { echo "Erro: git pull falhou."; return 1; }
+#     else
+#         echo "Pulando: git pull"
+#     fi
+
+#     # 2. git merge --no-edit (opcional, salvando automaticamente sem perguntar)
+#     if [ "$skip_merge" = false ]; then
+#         echo "Executando: git merge --no-edit (se necessário e sem conflitos)"
+#         # O --no-edit faz o merge sem abrir o editor para a mensagem de commit de merge.
+#         # Se houver conflitos, ele vai parar e exigir resolução manual.
+#         git merge --no-edit || { echo "Aviso: git merge falhou ou teve conflitos. Resolva-os manualmente."; }
+#     else
+#         echo "Pulando: git merge"
+#     fi
+
+#     # 3. git add .
+#     echo "Executando: git add ."
+#     git add . || { echo "Erro: git add falhou."; return 1; }
+
+#     # 4. git commit recebendo a mensagem ou opcional com mensagem padrao
+#     if [ -z "$commit_message" ]; then
+#         commit_message="Atualização automática - $(date +'%Y-%m-%d %H:%M:%S')"
+#     fi
+#     echo "Executando: git commit -m \"$commit_message\""
+#     git commit -m "$commit_message" || { echo "Erro: git commit falhou. Pode não haver alterações para commitar."; }
+
+#     # 5. git push
+#     echo "Executando: git push"
+#     git push || { echo "Erro: git push falhou."; return 1; }
+
+#     # 6. git reflog
+#     echo "Executando: git reflog"
+#     git reflog
+
+#     echo "Automação Git concluída."
+# }
