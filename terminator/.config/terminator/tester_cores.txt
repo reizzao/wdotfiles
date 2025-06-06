@@ -1,6 +1,0 @@
-
-dark_Github : 0d1117
-OminiVs1 : 15202b
-roxao1 : 1a001a
-dark1 : 0c000d
-verde--dark : 003300

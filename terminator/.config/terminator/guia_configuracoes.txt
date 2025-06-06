@@ -18,3 +18,10 @@ configuracoes / aplicações padrao / terminal / <escolher o terminal que quer c
 -- conceito remapear : antes de mapear teclas funcionais F1 etc... Reset ou apague as configuradas no configurador do terminal.
 
 props_terminator : https://www.systutorials.com/docs/linux/man/5-terminator_config/
+
+# Tester Cores
+  dark_Github : 0d1117
+  OminiVs1 : 15202b
+  roxao1 : 1a001a
+  dark1 : 0c000d
+  verde--dark : 003300
