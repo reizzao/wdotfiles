@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source "$MYSHC/github.mod.sh"
+source "$MYSHC/nvim.mod.sh"
 
 # VARS -- os textos sao editaveis
 export MYDIR_DOTFILES="$HOME/dotfiles"
