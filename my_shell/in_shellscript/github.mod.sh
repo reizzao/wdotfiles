@@ -2,34 +2,17 @@
 
 # Modules by Github
 
-tttg() {
-  echo "oi sou o ttt do git estou Mandando esse Arg: $1" # test de log
+gitoi() {
+  echo "oi sou o teste [[ tt do git ]] estou Mandando esse Arg: $1" # test de log
 }
 
-gts() {
-  git status
-}
-
-gtl() {
-	git reflog
-	# mostra menos detalhes no log de acoes feitas
-}
-
-gta() {
-  git add .
-}
-
-gtc() {
+gitc() {
   git commit -m "$1"
   # todo: no  git reflog não esta mostrando toda mensagem
 }
 
-gtp() {
-  git push
-}
-
 # AUTOMACAO GITHUB ACOES : RESGATAR MUDANCAS REMOTO COM LOCAL
-grr() {
+gitrr() {
     echo "Iniciando automação Git..."
 
     local skip_pull=false

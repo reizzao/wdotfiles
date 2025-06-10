@@ -12,10 +12,13 @@ export RC="bashrc" # controla o shell em uso no terminal.
 
 # ALIAS
 alias rr="source ~/.$RC"
-alias hh="cd ~/"
-alias wd="cd ~/dotfiles"
+alias home="cd ~/"
+alias dotfiles="cd ~/dotfiles"
 alias dev="cd ~/dev"
-alias ww="cd ~/www"
+alias www="cd ~/www"
+alias neovim="cd ~/.config/nvim/"
+alias vscode="cd ~/.config/Code/User/"
+alias v="nvim" # abre o editor nvim <v de vim>
 
 # CONFIGS
 # CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
@@ -25,7 +28,7 @@ stty -ixon
 
 resultado_test_fn_importada_tttg=$(tttg "este é o meu arg repassado a fn tttg")
 
-ttsh() {
+testsc() {
   echo "<< 1 :: Oi sou o oh-my-zsh.sh>>"
   echo ">> executando o importado git $resultado_test_fn_importada_tttg >>"
 }
