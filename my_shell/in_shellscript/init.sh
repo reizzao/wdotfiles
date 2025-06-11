@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# VARS -- os textos sao editaveis
+# VARS -- os textos sao editaveis : tem que ficar no alto- estasendo usado no source abaixo.
 export MYDIR_DOTFILES="$HOME/wdotfiles"
 export MYSHC="/$HOME/wdotfiles/my_shell/in_shellscript"
 
+# EXPORTACOES
 source "$MYSHC/github.mod.sh"
 source "$MYSHC/nvim.mod.sh"
 
@@ -14,9 +15,8 @@ export RC="bashrc" # controla o shell em uso no terminal.
 # ALIAS
 alias rr="source ~/.$RC"
 alias home="cd ~/"
-alias mysc="cd $MYSHC"
+alias mysc="cd $MYSHC" # Meu shell script do sistema
 alias dot="cd $MYDIR_DOTFILES"
-alias dev="cd ~/dev"
 alias www="cd ~/www"
 alias neovim="cd ~/.config/nvim/"
 alias vscode="cd ~/.config/Code/User/"
