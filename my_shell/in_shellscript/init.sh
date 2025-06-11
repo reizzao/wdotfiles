@@ -1,11 +1,12 @@
 #!/bin/bash
 
+# VARS -- os textos sao editaveis
+export MYDIR_DOTFILES="$HOME/wdotfiles"
+export MYSHC="/$HOME/wdotfiles/my_shell/in_shellscript"
+
 source "$MYSHC/github.mod.sh"
 source "$MYSHC/nvim.mod.sh"
 
-# VARS -- os textos sao editaveis
-export MYDIR_DOTFILES="$HOME/dotfiles"
-export MYSHC="/$HOME/dotfiles/my_shell/in_shellscript"
 
 # VARS - SYSTEM
 export RC="bashrc" # controla o shell em uso no terminal.
@@ -13,7 +14,8 @@ export RC="bashrc" # controla o shell em uso no terminal.
 # ALIAS
 alias rr="source ~/.$RC"
 alias home="cd ~/"
-alias dotfiles="cd ~/dotfiles"
+alias mysc="cd $MYSHC"
+alias dot="cd $MYDIR_DOTFILES"
 alias dev="cd ~/dev"
 alias www="cd ~/www"
 alias neovim="cd ~/.config/nvim/"
