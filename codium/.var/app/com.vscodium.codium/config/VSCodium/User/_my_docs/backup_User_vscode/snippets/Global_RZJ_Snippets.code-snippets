@@ -1,0 +1,285 @@
+{
+  // GLOBAL
+
+  "git feat": {
+    "prefix": "gf",
+    "body": [
+      "feat: [$1] add "
+    ],
+    "description": "git feat"
+  },
+
+  "git doc": {
+    "prefix": "gd",
+    "body": [
+      "doc: [$1] noted "
+    ],
+    "description": "git doc"
+  },
+
+  "git refactor": {
+    "prefix": "gr",
+    "body": [
+      "refactor: [$1] modified "
+    ],
+    "description": "git refactor"
+  },
+
+  "git todo": {
+    "prefix": "gt",
+    "body": [
+      "todo: [$1] resolve "
+    ],
+    "description": "git todo"
+  },
+
+  "div_markdown": {
+    "prefix": "div_markdown",
+    "body": [
+      "",
+      "---",
+      "",
+      "$1",
+    ],
+    "description": "md divide"
+  },
+
+  "mdt": {
+    "prefix": "mdt",
+    "body": [
+      "# $1",
+    ],
+    "description": "md titulo"
+  },
+
+  "mdst": {
+    "prefix": "mdst",
+    "body": [
+      "## $1",
+    ],
+    "description": "md subtitulo"
+  },
+
+  "mkt_MusicaNova": {
+    "prefix": "mkt_MusicaNova",
+    "body": [
+      "---",
+      "Registrando Autoria em Anexo : ",
+      "Musica : $1",
+      "Compositor: @ReinaldoReizao",
+      "Liberações : https://sites.google.com/view/reizaomusic",
+      "redes : @ReinaldoReizao",
+      "Data:  -  -  ",
+      "---"
+    ],
+    "description": "mkt_MusicaNova"
+  },
+
+  "jsDoc": {
+    "prefix": "jsDoc",
+    "body": [
+      "",
+      "/**",
+      " * @desc acao que $1",
+      " * @input ...",
+      " * @return uma estrutura ",
+      " * @example ...'",
+      " */",
+      ""
+    ],
+    "description": "jsDoc"
+  },
+
+  "testar_prototype": {
+    "prefix": "testar_prototype",
+    "body": [
+      "// Testar_Comprovar_Prototype: se comparar se são IGUAIS == o objeto1.metodoSemInvocar e o objeto2.metodo_SemInvocarsao  e retornar true, quer dizer estao apontando para o mesmo endereco de memoria entao estao no emsmo prototype",
+      "console.log(objeto1.metodo1 == objeto2.metodo1)"
+    ],
+    "description": "testar_prototype"
+  },
+
+  "tryCatch": {
+    "prefix": "tryCatch",
+    "body": [
+      "try {",
+      "  $1",
+      "} catch (e) {",
+      "  throw e",
+      "}"
+    ],
+    "description": "tryCatch"
+  },
+
+  "mark_nota": {
+    "prefix": "mark_nota",
+    "body": [
+      ">[!NOTE]",
+      ">",
+      ">textos da nota."
+    ],
+    "description": "mark_nota"
+  },
+
+  "nova_music": {
+    "prefix": "nova_music",
+    "body": [
+      "# Musica : $1",
+      "• #compositor(s) : ReinaldoREIZAO",
+      "",
+      "---",
+      "",
+      "",
+      "---",
+      "",
+      "Sinopse_Musical :",
+      "@Categorias : [  ]",
+      "• Data :  /  /",
+      "",
+      "---",
+      "Harmonia :",
+      "tom:",
+      "Bpm :",
+      "parte: \"A\", notas: [ ], compassos( ),  repete(), detalhe: \"\",",
+      "parte: \"B\", notas: [ ],, compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"transicao\", notas: [ ],, compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"REFRAO\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"final\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "",
+      "---"
+    ],
+    "description": "nova_music"
+  },
+
+
+  "music_contato": {
+    "prefix": "music_contato",
+    "body": [
+      "CONTATOS",
+      "*instagram : @ReizaoMusic   *twitter: @ReizaoMusic",
+      "site: www.sites.google.com/view/reinaldoreizao10",
+      "---",
+      "",
+      "------------------------------------",
+      ""
+    ],
+    "description": "music_contato"
+  },
+
+
+  "path_add_binario_new_package": {
+    "prefix": "path_add_binario_new_package",
+    "body": [
+      "# BIN_PATH - adicionar bin do novo pacote ao PATH caminho do sistema.",
+      "export PATH=$PATH:/home/rzj/_git_rzj/_programas_/ENDERECO_ATÉ_O_/bin/"
+    ],
+    "description": "path_add_binario_new_package"
+  },
+
+
+  "tabela_markdown": {
+    "prefix": "tabela_markdown",
+    "body": [
+      "${1:head}   | ${2:head2}",
+      "--------- | ------",
+      "${3:linha} | ${4:linha2}"
+    ],
+    "description": "tabela_markdown"
+  },
+
+  "divid": {
+    "prefix": "divid_lua",
+    "body": [
+      "/* -----------------------------------------------------------",
+      "--  $1",
+      "----------------------------------------------------------- */"
+    ],
+    "description": "divid"
+  },
+
+  "html5_template": {
+    "prefix": "html5_template",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"pt-br\">",
+      "<head>",
+      "    <meta charset=\"utf-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>$0TituloPagina</title>",
+      "</head>",
+      "<body>",
+      "    <p>Olá_mundo</p>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "html5_template"
+  },
+
+  "rest_http_GET": {
+    "prefix": "rest_http_GET",
+    "body": [
+      "###",
+      "GET {{ host }}/ HTTP/1.1",
+      "",
+      "###"
+    ],
+    "description": "rest_http_GET"
+  },
+
+
+  "rest_http_POST": {
+    "prefix": "rest_http_POST",
+    "body": [
+      "### ",
+      " ",
+      "$0POST {{ host }}/home",
+      "Content-Type: application/json",
+      "",
+      "{",
+      "  \"prop1\": \"foo\"",
+      "}",
+      "",
+      "### "
+    ],
+    "description": "rest_http_POST"
+  },
+
+
+  "config_rest_http_settings_VSCODE": {
+    "prefix": "config_rest_extensao_vscode",
+    "body": [
+      "{",
+      "  /*  VARIAVEIS DE AMBIENTE PARA EXTENSAO CLIENT_HTTP #PORT_SERVER */",
+      "  \"rest-client.environmentVariables\": {",
+      "    \"Local Env\": {",
+      "      \"host\": \"http://localhost:5000\"",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "config_rest_http_settings_VSCODE"
+  },
+
+
+  "divid": {
+    "prefix": "divid",
+    "body": [
+      " /* *************************************************** */",
+      "",
+      "$0",
+    ],
+    "description": "divid"
+  },
+
+  "divid_ESTRELAS": {
+    "prefix": "divid_ESTRELAS",
+    "body": [
+      "***************************************************",
+      "",
+      "$0",
+    ],
+    "description": "divid_ESTRELAS"
+  },
+
+
+}

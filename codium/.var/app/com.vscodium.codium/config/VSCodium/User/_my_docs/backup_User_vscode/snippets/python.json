@@ -1,0 +1,38 @@
+{
+  "divid python": {
+    "prefix": "divisor2",
+    "body": [
+      "",
+      "# ----------------------------------------------------------------------------",
+      "",
+      "$0"
+    ],
+    "description": "divid python"
+  },
+
+  "divisor": {
+    "prefix": "divisor",
+    "body": [
+      "# -----------------------/*  $0  */-----------------------",
+      "# $1"
+    ],
+    "description": "divisor"
+  },
+  "if __name__": {
+    "prefix": "if __name__",
+    "body": ["if __name__ == '__main__':", "    print($0)"],
+    "description": "if __name__"
+  },
+  "def __init__": {
+    "prefix": "def __init__",
+    "body": [
+      "def __init__(self,",
+      "             $0,",
+      "             ):",
+      "",
+      "",
+      "pass"
+    ],
+    "description": "def __init__"
+  }
+}

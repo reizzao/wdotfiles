@@ -1,0 +1,17 @@
+globalStorage/
+History/
+sync/
+workspaceStorage/
+
+syncLocalSettings.json
+
+# .*
+# !_notes_
+# !snippets/
+# !.gitignore
+# !sync/
+# !workspaceStorage/
+# !keybindings.json
+# !settings.json
+# !taks.json
+# !zzz.txt
