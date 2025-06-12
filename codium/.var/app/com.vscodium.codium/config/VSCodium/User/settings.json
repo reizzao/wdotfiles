@@ -268,7 +268,7 @@
     },
     "workbench.layoutControl.enabled": false,
     "window.autoDetectColorScheme": true,
-    "workbench.preferredDarkColorTheme": "poimandres",
+    "workbench.preferredDarkColorTheme": "Min Dark",
     "workbench.preferredLightColorTheme": "Min Light",
     "gitlens.advanced.messages": {
       "suppressIntegrationRequestTimedOutWarning": true
