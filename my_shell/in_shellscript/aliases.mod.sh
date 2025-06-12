@@ -6,10 +6,10 @@ alias home="cd ~/"
 alias mysc="cd $MYSHC" # Meu shell script do sistema
 
 # editores idea
-alias code='flatpak run com.vscodium.codium'
+alias codium='flatpak run com.vscodium.codium'
 alias config_flatpaks='cd ~/.var/app/'
 alias config_origem_codium='cd ~/.var/app/com.vscodium.codium/config/VSCodium/User'
-alias config_codium='cd ~/wdotfiles/codium/.var/app/com.vscodium.codium/config/VSCodium/User'
+alias config_codium_origin='cd ~/wdotfiles/codium/.var/app/com.vscodium.codium/config/VSCodium/User'
 alias config_codium='cd ~/wdotfiles/codium/'
 
 # my folders dev
