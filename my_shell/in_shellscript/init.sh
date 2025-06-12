@@ -8,7 +8,6 @@ export MYSHC="/$HOME/wdotfiles/my_shell/in_shellscript"
 source "$MYSHC/github.mod.sh"
 source "$MYSHC/nvim.mod.sh"
 
-
 # VARS - SYSTEM
 export RC="bashrc" # controla o shell em uso no terminal.
 
@@ -19,7 +18,7 @@ alias mysc="cd $MYSHC" # Meu shell script do sistema
 alias dot="cd $MYDIR_DOTFILES"
 alias www="cd ~/www"
 alias neovim="cd ~/.config/nvim/"
-alias vscode="cd ~/.config/Code/User/"
+alias vscode="cd ~/wdotfiles/Code/.config/User/"
 alias v="nvim" # abre o editor nvim <v de vim>
 
 # CONFIGS
@@ -28,10 +27,9 @@ stty -ixon
 
 # APP
 
-resultado_test_fn_importada_tttg=$(tttg "este é o meu arg repassado a fn tttg")
+# resultado_test_fn_importada_tttg=$(tttg "este é o meu arg repassado a fn tttg")
 
 testsc() {
   echo "<< 1 :: Oi sou o oh-my-zsh.sh>>"
-  echo ">> executando o importado git $resultado_test_fn_importada_tttg >>"
+  # echo ">> executando o importado git $resultado_test_fn_importada_tttg >>"
 }
-
