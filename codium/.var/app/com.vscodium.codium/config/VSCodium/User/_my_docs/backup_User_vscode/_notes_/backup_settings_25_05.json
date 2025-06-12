@@ -106,7 +106,7 @@
   // TYPESCRIPT config linguage PARA TODOS TS : [ TS_ISOLADOS, DENO, ]
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features", // CONTROLA FORMATACAO DOS TS
-    "editor.formatOnSave": true
+    "editor.ff
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.suggest.autoImports": true,
