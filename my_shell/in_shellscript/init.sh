@@ -5,6 +5,8 @@ export MYDIR_DOTFILES="$HOME/wdotfiles"
 export MYSHC="/$HOME/wdotfiles/my_shell/in_shellscript"
 
 # EXPORTACOES
+# -- TRAZENDO OS MODULOS
+source "$MYSHC/system.mod.sh"
 source "$MYSHC/github.mod.sh"
 source "$MYSHC/nvim.mod.sh"
 
