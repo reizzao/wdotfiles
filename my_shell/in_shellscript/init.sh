@@ -17,7 +17,7 @@ alias home="cd ~/"
 alias mysc="cd $MYSHC" # Meu shell script do sistema
 alias dot="cd $MYDIR_DOTFILES"
 alias conf_nvim="cd ~/.config/nvim/"
-alias conf_vscode="cd ~/.config/User/"
+alias conf_vscode="cd ~/.config/Code/User"
 # alias vscode="cd ~/wdotfiles/Code/.config/User/"
 alias v="nvim" # abre o editor nvim <v de vim>
 
