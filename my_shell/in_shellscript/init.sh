@@ -28,6 +28,9 @@ alias conf_vscode="cd ~/.config/Code/User"
 # alias vscode="cd ~/wdotfiles/Code/.config/User/"
 alias v="nvim" # abre o editor nvim <v de vim>
 
+# utils
+alias install_fonts="fc-cache -fv ~/.fonts"
+
 # CONFIGS
 # CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
 stty -ixon
