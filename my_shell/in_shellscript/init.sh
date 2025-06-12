@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# VARS -- os textos sao editaveis : tem que ficar no alto- estasendo usado no source abaixo.
+# VARS -- ALTO ACESSO
 export MYDIR_DOTFILES="$HOME/wdotfiles"
 export MYSHC="/$HOME/wdotfiles/my_shell/in_shellscript"
 
