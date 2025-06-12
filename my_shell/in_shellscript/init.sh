@@ -16,9 +16,8 @@ alias rr="source ~/.$RC"
 alias home="cd ~/"
 alias mysc="cd $MYSHC" # Meu shell script do sistema
 alias dot="cd $MYDIR_DOTFILES"
-alias www="cd ~/www"
-alias neovim="cd ~/.config/nvim/"
-alias vscode="cd ~/.config/User/"
+alias conf_nvim="cd ~/.config/nvim/"
+alias conf_vscode="cd ~/.config/User/"
 # alias vscode="cd ~/wdotfiles/Code/.config/User/"
 alias v="nvim" # abre o editor nvim <v de vim>
 
