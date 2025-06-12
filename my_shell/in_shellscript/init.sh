@@ -15,7 +15,8 @@ source "$MYSHC/nvim.mod.sh"
 export RC="bashrc" # controla o shell em uso no terminal.
 
 # ADICIONADOS AO PATH
-# export PATH="/opt/VSCodium/bin:$PATH" # idea_VsCodium # -- não funciona os flatpak
+# export PATH="/opt/VSCodium/bin:$PATH" 
+# idea_VsCodium # -- não funciona PATH ao flatpak
 
 # CONFIGS
 # CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
