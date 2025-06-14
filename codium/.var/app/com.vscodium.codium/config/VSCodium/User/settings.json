@@ -3,7 +3,8 @@
   "editor.formatOnSave": true, // -----------------------------
   "files.autoSave": "afterDelay", // --------------------------
   "keyboard.multiCommandTime": 300, // ------------------------ tempo de espera entre tecla comando e normal texto - padrao é 300
-  // POSICIONAMENTOS
+  // VISUAIS
+  "window.newWindowDimensions": "maximized", // -------------- como vai abrir janela do editor ao iniciar.
   "workbench.sideBar.location": "right", // ------------------- escolhe lado do sidebar
   "workbench.panel.defaultLocation": "bottom", // ------------- define posicao do terminal
   "workbench.startupEditor": "newUntitledFile", // ------------

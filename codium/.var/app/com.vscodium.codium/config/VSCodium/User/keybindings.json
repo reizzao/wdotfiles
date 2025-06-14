@@ -194,9 +194,9 @@
     "desc": "abrir arquivo selecionado em vsplit -> default: ctrl+enter"
   },
   {
-    "key": "f3",
+    "key": "alt+e",
     "command": "workbench.action.toggleSidebarVisibility",
-    "desc": "toggle_explorador_de_arquivos - remapear para alt+e && f3 - default: ctrl+b"
+    "desc": "toggle_explorador_de_arquivos - neural: E de explore - default: ctrl+b"
   },
   {
     "key": "alt+e",
