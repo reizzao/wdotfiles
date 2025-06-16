@@ -1,12 +1,12 @@
 [
   {
-    "key": "alt+cb",
+    "key": "alt+c",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly",
     "desc": "comentario em linha -> neural: c de comentario"
   },
   {
-    "key": "alt+c",
+    "key": "alt+v",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly",
     "desc": "comentario em bloco -> neural: c de comentario e f de full todos."
