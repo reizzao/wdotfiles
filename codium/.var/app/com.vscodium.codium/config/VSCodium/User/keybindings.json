@@ -12,7 +12,7 @@
     "desc": "comentario em bloco -> neural: c de comentario e f de full todos."
   },
   {
-    "key": "ctrl+d",
+    "key": "alt+q",
     "command": "workbench.action.closeActiveEditor",
     "desc": "[leader+q.] fecha buffer onde estou."
   },
@@ -23,7 +23,7 @@
     "desc": "[leader qb] fecha todos buffers abertos >> default: ctrl+k ctrl+w"
   },
   {
-    "key": "alt+q",
+    "key": "ctrl+k",
     "command": "workbench.action.closeWindow",
     "desc": "kill - fecha o editor"
   },
@@ -276,5 +276,9 @@
     "key": "alt+t",
     "command": "workbench.action.terminal.new",
     "desc": "cria novo terminal"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
   }
 ]

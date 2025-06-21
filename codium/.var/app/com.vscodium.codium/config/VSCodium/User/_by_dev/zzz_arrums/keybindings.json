@@ -29,7 +29,7 @@
     "when": "editorFocus",
     "desc": "Path_absolut : Copiar caminho absoluto de arquivo em foco >> original era ctrl+k ctrl+alt+c"
   },
-  // Atalho para DESIDENTAR (remover um nível de indentação): com shit+teclas
+  // tabs -> DESIDENTAR (remover um nível de indentação): com alt+ < > (menor_que - maior_que)
   {
     "key": "tab",
     "command": "tab",
@@ -43,23 +43,23 @@
     "desc": "re-Tab desindenta."
   },
   {
-    "key": "shift+left", // Shift + Seta para a Esquerda
+    "key": "alt+.", // Shift + Seta para a Esquerda
     "command": "editor.action.outdentLines",
     "when": "editorTextFocus && !editorReadonly && editorHas Selection"
   },
   {
-    "key": "shift+left",
+    "key": "alt+.",
     "command": "editor.action.outdentLines",
     "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
   },
   // Atalho para INDENTAR (adicionar um nível de indentação)
   {
-    "key": "shift+right", // Shift + Seta para a Direita
+    "key": "alt+,", // Shift + Seta para a Direita
     "command": "editor.action.indentLines",
     "when": "editorTextFocus && !editorReadonly && editorHasSelection"
   },
   {
-    "key": "shift+right",
+    "key": "alt+,",
     "command": "editor.action.indentLines",
     "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
   },
@@ -70,11 +70,6 @@
     "command": "editor.action.insertLineBefore",
     "desc": "insere ja em edição uma linha acima - comando vscode usando em normal mode no vsVIM"
   },
-  // {
-  //   "key": "f4",
-  //   "command": "code-runner.run",
-  //   "desc": "run code arquivo no terminal - - default era ctrl+alt+n"
-  // },
   {
     "key": "ctrl+f",
     "command": "actions.find",
@@ -193,13 +188,13 @@
   {
     "key": "alt+q",
     "command": "workbench.action.closeActiveEditor",
-    "desc": "[leader+q.] fecha buffer onde estou."
+    "desc": "fecha buffer onde estou."
   },
   {
     "key": "alt+w",
     "command": "workbench.action.closeAllEditors",
     "when": "!editorTextFocus || editorTextFocus",
-    "desc": "[leader qb] fecha buffers abertos >> default: ctrl+k ctrl+w"
+    "desc": "fecha buffers abertos."
   },
   {
     "key": "ctrl+tab",
@@ -288,22 +283,26 @@
     "when": "terminal.active || terminalFocus",
     "desc": "toggle terminal >>> key original ctrl+shift+[BracketLeft] "
   },
-  // -- fechamentos
-  
+  // Terminal
   {
     "key": "alt+t",
     "command": "workbench.action.terminal.new",
     "desc": "cria novo terminal"
   },
   {
-    "key": "f11",
+    "key": "f10",
     "command": "workbench.action.terminal.kill",
-    "desc": "fecha kill terminal em foco - default: #NaoTinha"
+    "desc": "fecha kill TERMINAL em foco - default: #NaoTinha"
   },
+  // -- Editor
   {
     "key": "f12",
     "command": "workbench.action.terminal.killAll",
     "desc": "ao executar fora do terminal- fecha mata todos terminais abertos."
   }
-  
+  // {
+  //   "key": "f4",
+  //   "command": "code-runner.run",
+  //   "desc": "run code arquivo no terminal - - default era ctrl+alt+n"
+  // },
 ]
