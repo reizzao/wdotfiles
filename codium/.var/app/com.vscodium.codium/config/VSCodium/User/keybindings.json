@@ -183,7 +183,7 @@
     "desc": "navega entre janelas abertas - default -> ctrl+tab"
   },
   {
-    "key": "shift+f1",
+    "key": "shift+f12",
     "command": "workbench.action.terminal.kill",
     "desc": "fecha kill terminal em foco - default: #NaoTinha"
   },
@@ -262,13 +262,13 @@
     "desc": "redimensiona terminal a esquerda -> Somente com SETAS LATERAIS {#TODO fazer somente setas no modo normal na config > vsVIM>>} default: ctrl+shift+right"
   },
   {
-    "key": "f1",
+    "key": "f12",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active || terminalFocus",
     "desc": "toggle terminal >>> key original ctrl+shift+[BracketLeft] "
   },
   {
-    "key": "f12",
+    "key": "shift+f12",
     "command": "workbench.action.terminal.killAll",
     "desc": "ao executar fora do terminal- fecha mata todos terminais abertos."
   },
@@ -280,5 +280,23 @@
   {
     "key": "ctrl+w",
     "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "shift+f12",
+    "command": "workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.openApplicationSettingsJson"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.openSettingsJson"
   }
 ]
