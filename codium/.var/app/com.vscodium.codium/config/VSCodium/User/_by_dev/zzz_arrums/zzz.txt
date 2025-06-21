@@ -1,4 +1,0 @@
-todo: [] add
-doc: [] add
-refactor: [] add
-escrevendopara

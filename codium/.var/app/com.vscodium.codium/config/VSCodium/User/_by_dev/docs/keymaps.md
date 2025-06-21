@@ -1,4 +1,25 @@
-[
+# Keymaps - keybindings do Vscode
+---
+---
+Atalhos_Vscode
+
+- Detalhes: [
+  - Para definir combinacoes com 2 letras deixe 1 espaço para a ultima letra ex: "alt+b c"
+]
+
+Melhor_Tecla_Leader: [ 1 space, 2 alt, ] : Usando: [ Alt, ]
+
+ToogleTerminal:
+
+Pra_Sair : Matar_Editor_Perguntando: atalho:
+
+Matar_Pra_Pesquisar: atalho: Para fechar matar o editor , Perguntando se quer salvar mofificacoes e deixando o só o telescope na pasta atual em foco
+
+Fechar_Buffer_Foco: atalho: Para fechar buffer em foco , Perguntando se quer salvar mofificacoes
+---
+
+// -- Arrumar vindo do keybindingis
+
   {
     "key": "ctrl+j", // Abrir settings json do vscode
     "command": "workbench.action.openSettingsJson",
@@ -306,4 +327,6 @@
     "desc": "ao executar fora do terminal- fecha mata todos terminais abertos."
   }
   
-]
+
+---
+---
