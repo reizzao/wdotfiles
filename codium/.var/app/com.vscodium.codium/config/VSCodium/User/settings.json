@@ -281,8 +281,37 @@
   "git.confirmSync": false,
   //
   // configs VimVscode : [doc: ](https://github.com/VSCodeVim/Vim)
-  "vim.normalModeKeyBindings": [],
   "window.dialogStyle": "custom", // first plan open window
+  // Se você não tiver um líder configurado, adicione-o.
+  // É uma boa prática usar uma tecla líder para seus mapeamentos personalizados.
+  "vim.leader": "<space>", // Exemplo, se você usa espaço como líder
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "-"
+      ], // **Este é o atalho que você vai usar!**
+      "commands": [
+        "vsnetrw.open"
+      ],
+      "when": "!editorLangId == 'vsnetrw'"
+    }
+  ],
+  // --- Configurações dos atalhos DENTRO do vsnetrw ---
+  "vsnetrw.keybindings": {
+    "open": "enter", // Abrir arquivo/diretório
+    "goUp": "-", // Ir para o diretório pai
+    "goHome": "~", // Ir para a raiz do workspace
+    "rename": "R", // Renomear
+    "newFileOrDirectory": "%", // Criar novo arquivo/diretório
+    "newDirectory": "d", // Criar novo diretório
+    "delete": "D", // Deletar
+    "refresh": "ctrl+l", // Atualizar listagem
+    // Adicione aqui outros mapeamentos conforme sua preferência,
+    // consultando a documentação da extensão vsnetrw para os nomes dos comandos.
+    // Ex: "cut": "x", "copy": "c", "paste": "p", etc.
+  }
+  //
   // custom mods
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.normal": [
@@ -304,7 +333,7 @@
     "statusBar.background": "#029d0c",
     "statusBar.noFolderBackground": "#029d0c",
     "statusBar.debuggingBackground": "#029d0c",
-    //    "statusBar.foreground": "#434C5E",
-    "statusBar.debuggingForeground": "#434C5E"
+    "statusBar.debuggingForeground": "#434C5E",
+    "statusBar.foreground": "#434C5E"
   },
 }

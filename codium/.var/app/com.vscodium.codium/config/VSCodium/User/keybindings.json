@@ -1,5 +1,16 @@
 [
   {
+    "key": "alt+e",
+    "command": "vsnetrw.open",
+    "when": "!editorLangId == 'vsnetrw'", // Importante para evitar que Alt+E funcione DENTRO do vsnetrw
+    "desc": "abre o explorer vsnetrw -- já configurado no settings. como leader -"
+  },
+  {
+    "key": "alt+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "desc": "toggle_explorador_de_arquivos - neural: E de explore - default: ctrl+b"
+  },
+  {
     "key": "alt+c",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly",
@@ -192,16 +203,6 @@
     "command": "breadcrumbs.revealFocusedFromTreeAside",
     "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus",
     "desc": "abrir arquivo selecionado em vsplit -> default: ctrl+enter"
-  },
-  {
-    "key": "alt+e",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "desc": "toggle_explorador_de_arquivos - neural: E de explore - default: ctrl+b"
-  },
-  {
-    "key": "alt+e",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "desc": "toggle_explorador_de_arquivos - remapear para alt+e && f3 - default: ctrl+b"
   },
   {
     "key": "f2",
