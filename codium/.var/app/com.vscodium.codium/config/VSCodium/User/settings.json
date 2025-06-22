@@ -282,6 +282,7 @@
   //
   // configs VimVscode : [doc: ](https://github.com/VSCodeVim/Vim)
   "vim.normalModeKeyBindings": [],
+  "window.dialogStyle": "custom", // first plan open window
   // custom mods
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.normal": [
@@ -300,10 +301,10 @@
   "vim.statusBarColors.easymotioninputmode": "#007ACC",
   "vim.statusBarColors.surroundinputmode": "#007ACC",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#8FBCBB",
-    "statusBar.noFolderBackground": "#8FBCBB",
-    "statusBar.debuggingBackground": "#8FBCBB",
-    "statusBar.foreground": "#434C5E",
+    "statusBar.background": "#029d0c",
+    "statusBar.noFolderBackground": "#029d0c",
+    "statusBar.debuggingBackground": "#029d0c",
+    //    "statusBar.foreground": "#434C5E",
     "statusBar.debuggingForeground": "#434C5E"
   },
 }
