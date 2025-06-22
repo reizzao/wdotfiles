@@ -278,5 +278,32 @@
     "suppressIntegrationRequestTimedOutWarning": true
   },
   "liveServer.settings.donotShowInfoMsg": true,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  //
+  // configs VimVscode : [doc: ](https://github.com/VSCodeVim/Vim)
+  "vim.normalModeKeyBindings": [],
+  // custom mods
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": [
+    "#8FBCBB",
+    "#434C5E"
+  ],
+  // Colors status mods
+  "vim.statusBarColors.insert": "#029d0c",
+  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E",
+    "statusBar.debuggingForeground": "#434C5E"
+  },
 }
