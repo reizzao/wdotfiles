@@ -17,7 +17,7 @@
     "desc": "[leader+q.] fecha buffer onde estou."
   },
   {
-    "key": "alt+k",
+    "key": "alt+w",
     "command": "workbench.action.closeAllEditors",
     "when": "!editorTextFocus || editorTextFocus",
     "desc": "[leader qb] fecha todos buffers abertos >> default: ctrl+k ctrl+w"
