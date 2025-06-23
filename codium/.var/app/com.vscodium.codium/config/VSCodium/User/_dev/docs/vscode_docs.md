@@ -10,6 +10,10 @@ Top_Extensoes
   ]
 - 
 
+Tutorials:
+- [how to install extension from VSIX ] : >> marketplace extension >> download >>
+panel extension >> click install from  VISX >> open file .visx >> and install.
+
 
 ---
 
