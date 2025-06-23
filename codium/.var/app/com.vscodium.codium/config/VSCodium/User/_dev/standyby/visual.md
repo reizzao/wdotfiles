@@ -13,3 +13,7 @@ Foreground
 - white_clean: #c2c2c2
 
 ---
+Parts_Editor
+- sidebar: activityBar
+- rodape: status bar
+---
