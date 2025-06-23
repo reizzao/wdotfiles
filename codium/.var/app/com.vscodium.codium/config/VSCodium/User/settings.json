@@ -26,18 +26,6 @@
     "*.css": "css",
     ".dev.vars": "dotenv"
   },
-  "symbols.files.associations": {
-    "*.module.ts": "nest",
-    "*.guard.ts": "typescript",
-    "*.spec.ts": "ts-test",
-    "*.e2e-spec.ts": "ts-test",
-    "*.mock.ts": "ts-test",
-    "vitest.config.e2e.ts": "vite",
-    ".env.development.local": "gear",
-    ".env.test.local": "gear",
-    ".env.local": "gear",
-    ".env.example": "gear"
-  },
   "tailwindCSS.experimental.classRegex": [
     [
       "tv\\(([^)]*)\\)",
@@ -310,30 +298,30 @@
     // Adicione aqui outros mapeamentos conforme sua preferência,
     // consultando a documentação da extensão vsnetrw para os nomes dos comandos.
     // Ex: "cut": "x", "copy": "c", "paste": "p", etc.
-  }
+  },
   //
   // custom mods
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.normal": [
-    "#8FBCBB",
-    "#434C5E"
+    "#000000",
+    "#ffffff"
   ],
   // Colors status mods
-  "vim.statusBarColors.insert": "#029d0c",
-  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.insert": "#000000",
+  "vim.statusBarColors.visual": "#320269",
   "vim.statusBarColors.visualline": "#B48EAD",
   "vim.statusBarColors.visualblock": "#A3BE8C",
   "vim.statusBarColors.replace": "#D08770",
-  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.commandlineinprogress": "#550269",
   "vim.statusBarColors.searchinprogressmode": "#007ACC",
   "vim.statusBarColors.easymotionmode": "#007ACC",
   "vim.statusBarColors.easymotioninputmode": "#007ACC",
   "vim.statusBarColors.surroundinputmode": "#007ACC",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#029d0c",
-    "statusBar.noFolderBackground": "#029d0c",
-    "statusBar.debuggingBackground": "#029d0c",
-    "statusBar.debuggingForeground": "#434C5E",
-    "statusBar.foreground": "#434C5E"
+    "statusBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBar.debuggingBackground": "#000000",
+    "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.foreground": "#ffffff"
   },
 }
