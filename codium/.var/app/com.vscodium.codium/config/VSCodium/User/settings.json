@@ -303,8 +303,8 @@
   // custom mods
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.normal": [
-    "#000000",
-    "#ffffff"
+    "#171515", // background: changes that reflects 
+    "#c2c2c2" // foreground: changes that reflects 
   ],
   // Colors status mods
   "vim.statusBarColors.insert": "#000000",
@@ -321,7 +321,7 @@
     "statusBar.background": "#000000",
     "statusBar.noFolderBackground": "#000000",
     "statusBar.debuggingBackground": "#000000",
-    "statusBar.debuggingForeground": "#ffffff",
-    "statusBar.foreground": "#ffffff"
+    "statusBar.debuggingForeground": "#c2c2c2",
+    "statusBar.foreground": "#c2c2c2"
   },
 }
