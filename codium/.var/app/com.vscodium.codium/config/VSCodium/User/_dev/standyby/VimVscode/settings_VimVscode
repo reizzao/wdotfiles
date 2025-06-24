@@ -1,0 +1,59 @@
+// backups : settings #VimVscode : 
+
+
+  // configs VimVscode : [doc: ](https://github.com/VSCodeVim/Vim)
+  "window.dialogStyle": "custom", // first plan open window
+  // Se você não tiver um líder configurado, adicione-o.
+  // É uma boa prática usar uma tecla líder para seus mapeamentos personalizados.
+  "vim.leader": "<space>", // Exemplo, se você usa espaço como líder
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "-"
+      ], // **Este é o atalho que você vai usar!**
+      "commands": [
+        "vsnetrw.open"
+      ],
+      "when": "!editorLangId == 'vsnetrw'"
+    }
+  ],
+  // --- Configurações dos atalhos DENTRO do vsnetrw ---
+  "vsnetrw.keybindings": {
+    "open": "enter", // Abrir arquivo/diretório
+    "goUp": "-", // Ir para o diretório pai
+    "goHome": "~", // Ir para a raiz do workspace
+    "rename": "R", // Renomear
+    "newFileOrDirectory": "%", // Criar novo arquivo/diretório
+    "newDirectory": "d", // Criar novo diretório
+    "delete": "D", // Deletar
+    "refresh": "ctrl+l", // Atualizar listagem
+    // Adicione aqui outros mapeamentos conforme sua preferência,
+    // consultando a documentação da extensão vsnetrw para os nomes dos comandos.
+    // Ex: "cut": "x", "copy": "c", "paste": "p", etc.
+  },
+  //
+  // custom mods
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": [
+    "#171515", // background: changes that reflects 
+    "#c2c2c2" // foreground: changes that reflects 
+  ],
+  // Colors status mods
+  "vim.statusBarColors.insert": "#000000",
+  "vim.statusBarColors.visual": "#320269",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#550269",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBar.debuggingBackground": "#000000",
+    "statusBar.debuggingForeground": "#c2c2c2",
+    "statusBar.foreground": "#c2c2c2"
+  },
