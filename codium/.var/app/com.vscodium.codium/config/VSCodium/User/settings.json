@@ -1,10 +1,11 @@
 {
   // Firt
   // ... outras configurações
-  "markdown.preview.language": "github", // Isso informa ao VSCodium para usar o preview do GitHub
+  // "markdown.preview.language": "github", // Isso informa ao VSCodium para usar o preview do GitHub
   // BY EXTENSIONS
-  // by Extension: <Markdown Preview GitHub Styling >
-  "markdown-preview-github-styling.style": "dark", // ------------------------ color preview markdown.>
+  // Extension: <markdown-preview-enhanced> by preview markdown dark
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.enableCodeBlockToolbar": true, // ---- mostra o botão copiar no bloco
   // 
   // comandos
   "editor.formatOnSave": true, // -----------------------------
