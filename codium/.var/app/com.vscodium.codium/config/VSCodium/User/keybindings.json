@@ -1,5 +1,10 @@
 [
   {
+    "key": "f5", // Restart Vscode -- origin: "ctrl+shift+r"
+    "command": "workbench.action.reloadWindow",
+    "when": "always",
+  },
+  {
     "key": "alt+e",
     "command": "workbench.action.toggleSidebarVisibility",
     "desc": "toggle_explorador_de_arquivos - neural: E de explore - default: ctrl+b"
@@ -31,12 +36,6 @@
     "key": "ctrl+k",
     "command": "workbench.action.closeWindow",
     "desc": "kill - fecha o editor"
-  },
-  {
-    "key": "ctrl+shift+f5",
-    "command": "workbench.action.reloadWindow",
-    "when": "editorTextFocus",
-    "desc": "reload restartar vscode"
   },
   {
     "key": "shift+f2",
@@ -298,5 +297,20 @@
     "key": "ctrl+p",
     "command": "-extension.vim_ctrl+p",
     "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f5",
+    "command": "-debug.openView",
+    "when": "!debuggersAvailable"
   }
 ]
