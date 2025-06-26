@@ -300,5 +300,6 @@
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "git.confirmSync": false,
+  "terminal.integrated.env.linux": {},
   //
 }
