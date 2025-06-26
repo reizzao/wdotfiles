@@ -1,72 +1,13 @@
 {
-  // Firt
-  // ... outras configurações
-  // "markdown.preview.language": "github", // Isso informa ao VSCodium para usar o preview do GitHub
-  // BY EXTENSIONS
-  // Extension: <markdown-preview-enhanced> by preview markdown dark
-  "markdown-preview-enhanced.previewTheme": "github-dark.css",
-  "markdown-preview-enhanced.enableCodeBlockToolbar": true, // ---- mostra o botão copiar no bloco
-  // 
-  // comandos
-  "editor.formatOnSave": true, // -----------------------------
-  "files.autoSave": "afterDelay", // --------------------------
-  "keyboard.multiCommandTime": 300, // ------------------------ tempo de espera entre tecla comando e normal texto - padrao é 300
-  // VISUAIS
-  "window.newWindowDimensions": "maximized", // -------------- como vai abrir janela do editor ao iniciar.
-  "workbench.sideBar.location": "right", // ------------------- escolhe lado do sidebar
-  "workbench.panel.defaultLocation": "bottom", // ------------- define posicao do terminal
-  "workbench.startupEditor": "newUntitledFile", // ------------
-  "editor.fontSize": 14, // -----------------------------------
-  "editor.lineHeight": 1.8, // --------------------------------
-  "javascript.suggest.autoImports": true, // -------------------
-  "javascript.updateImportsOnFileMove.enabled": "always", // ---
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "extensions.ignoreRecommendations": true, // -----------------
-  "typescript.tsserver.log": "off", // -------------------------
-  "editor.stickyScroll.enabled": false,
-  "workbench.tree.enableStickyScroll": false,
-  "files.associations": {
-    ".env.*": "dotenv",
-    ".prettierrc": "json",
-    "*.css": "css",
-    ".dev.vars": "dotenv"
-  },
-  "tailwindCSS.experimental.classRegex": [
-    [
-      "tv\\(([^)]*)\\)",
-      "[\"'`]([^\"'`]*).*?[\"'`]"
-    ],
-    "class:\\s*?[\"'`]([^\"'`]*).*?,"
-  ],
-  "editor.parameterHints.enabled": false,
-  "editor.renderLineHighlight": "gutter",
-  "cSpell.language": "en,pt",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.suggestSelection": "first",
-  "explorer.confirmDelete": false,
+  // EXTENSIONS CONFIG
+  "extensions.ignoreRecommendations": true, // ---------------------------------
+  "console-ninja.featureSet": "Community",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css", // -------------- by_Extension: <markdown-preview-enhanced> by preview markdown dark
+  "markdown-preview-enhanced.enableCodeBlockToolbar": true, // ----------------- mostra o botão copiar no bloco
   "gitlens.codeLens.recentChange.enabled": false,
-  "terminal.integrated.showExitAlert": false,
-  "[prisma]": {
-    "editor.formatOnSave": true
-  },
-  "typescript.suggest.autoImports": true,
-  "typescript.preferences.preferTypeOnlyAutoImports": true,
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "workbench.editor.labelFormat": "short",
-  "editor.fontLigatures": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "mdx": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx",
-    "mdx": "jsx"
-  },
+  // "workbench.productIconTheme": "fluent-icons", // TODO: NOT INSTALED
+  // CSPELL : ORTOGRAFIA
+  "cSpell.language": "en,pt",
   "cSpell.enableFiletypes": [
     "!asciidoc",
     "!c",
@@ -86,6 +27,96 @@
     "!scala",
     "!scss"
   ],
+  //
+  // EDITOR
+  "editor.formatOnSave": true, // ----------------------------------------------
+  "files.autoSave": "afterDelay", // -------------------------------------------
+  "keyboard.multiCommandTime": 300, // ----------------------------------------- tempo de espera entre tecla comando e normal texto - padrao é 300
+  // VISUAIS
+  "window.newWindowDimensions": "maximized", // -------------------------------- como vai abrir janela do editor ao iniciar.
+  "workbench.sideBar.location": "right", // ------------------------------------ escolhe lado do sidebar
+  "workbench.panel.defaultLocation": "bottom", // ------------------------------ define posicao do terminal
+  "workbench.startupEditor": "newUntitledFile", // -----------------------------
+  "editor.fontSize": 14, // ----------------------------------------------------
+  "editor.lineHeight": 1.8, // -------------------------------------------------
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.stickyScroll.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css",
+    ".dev.vars": "dotenv"
+  },
+  "editor.parameterHints.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.suggestSelection": "first",
+  "explorer.confirmDelete": false,
+  // TERMINAL
+  "terminal.integrated.showExitAlert": false,
+  // RUN RUN TIMES + LANGUAGES + FRAMEWORKS
+  //RUN_TIME: DENO : formatador padrao para deno esta no escopo [typescript]
+  "deno.enable": true, // deixar true :: mostra metatags, e é vital nas sugestoes de auto_importacao , deixar true - atrapalha o prettier mas é só colocar um arquivo prettierrc em cada projeto que da certo.
+  "deno.lint": true,
+  "deno.unstable": true,
+  // JAVASCRIPT
+  "[javascript]": {
+    // "editor.defaultFormatter": "denoland.vscode-deno", // TODO: VALUE NULL
+    "editor.formatOnSave": true
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "javascript.suggest.autoImports": true,
+  // TYPESCRIPT WITH DENO JS
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features", // CONTROLA FORMATACAO DOS TS
+  },
+  "typescript.tsserver.log": "off", // -----------------------------------------
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  // REACT TS
+  "[typescriptreact]": {
+    // "editor.defaultFormatter": "denoland.vscode-deno" // TODO: VALUE NULL
+  },
+  // GOLANG
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "workspace",
+  "go.lintFlags": [
+    "-E",
+    "dogsled",
+    "-E",
+    "gochecknoglobals"
+  ],
+  "go.useLanguageServer": true,
+  "gopls": {
+    "ui.semanticTokens": true // autocomplete Go by gopls
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  // MARKDOWN
+  "markdown.preview.language": "github", // ------------------------------------ Isso informa ao VSCodium para usar o preview do GitHub
+  // PRISMA
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  //
+  "workbench.editor.labelFormat": "short",
+  "editor.fontLigatures": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "mdx": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "mdx": "jsx"
+  },
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.compactFolders": false,
   "git.enableSmartCommit": true,
@@ -102,7 +133,6 @@
     "graphql"
   ],
   "editor.semanticHighlighting.enabled": false,
-  "workbench.productIconTheme": "fluent-icons",
   "editor.fontFamily": "JetBrains Mono",
   "gitlens.codeLens.authors.enabled": false,
   "editor.tabSize": 2,
@@ -129,10 +159,6 @@
   "window.commandCenter": false,
   "git.openRepositoryInParentFolders": "always",
   "symbols.hidesExplorerArrows": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "console-ninja.featureSet": "Community",
   "workbench.editor.empty.hint": "hidden",
   "update.showReleaseNotes": false,
   "security.promptForLocalFileProtocolHandling": false,
