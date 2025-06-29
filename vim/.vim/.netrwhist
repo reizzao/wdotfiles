@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/rzj'
+let g:netrw_dirhist_0='/home/rzj/.vim'
+let g:netrw_dirhist_9='/home/rzj'
+let g:netrw_dirhist_8='/home/rzj/.vscode-oss'
+let g:netrw_dirhist_7='/home/rzj'
+let g:netrw_dirhist_6='/home/rzj/.config/nvim/lua/custom'
+let g:netrw_dirhist_5='/home/rzj/.config/nvim/lua'
+let g:netrw_dirhist_4='/home/rzj/.config/nvim'
+let g:netrw_dirhist_3='/home/rzj/.config'
+let g:netrw_dirhist_2='/home/rzj'
