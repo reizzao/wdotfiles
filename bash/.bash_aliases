@@ -6,7 +6,7 @@
 export PATH="$PATH:$HOME/wdev" # MY INFRA + SHELLSC
 
 # VARS SUPREMAS
-export DIR_MYSYSTEM_SH="$HOME/wdev/winfra/in_shellscript"
+export DIR_MYSYSTEM_SH="$HOME/whome/wdev/winfra/in_shellscript"
 
 # IMPORTS
 source "$DIR_MYSYSTEM_SH/init.sh"
