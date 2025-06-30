@@ -1,0 +1,25 @@
+{
+	"folders": [
+			{
+			"path": "/home/rzj/whome",
+			"name": "WHOME"
+		},
+			{
+			"path": "/home/rzj/wdotfiles",
+			"name": "WDOTFILES"
+		},
+		{
+			"path": "/home/rzj/wdotfiles/vim",
+			"name": "CONFIG_VIM" 
+		},		
+		{
+			"path": "/home/rzj/.var/app/com.vscodium.codium/config/VSCodium/User",
+			"name": "CONFIG_CODE" 
+		},
+		{
+			"path": "/home/rzj/.config/nvim",
+			"name": "NVIM" 
+		}
+	],
+	"settings": {}
+}
